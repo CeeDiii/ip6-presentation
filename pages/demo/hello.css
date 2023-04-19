@@ -1,10 +1,10 @@
-#content .hello div {
+div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#content .hello svg {
+svg {
     width: 36em;
 }
 
