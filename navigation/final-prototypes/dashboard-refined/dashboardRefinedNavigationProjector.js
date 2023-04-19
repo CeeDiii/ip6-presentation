@@ -1,7 +1,6 @@
 import { ObservableList } from "../../../kolibri/observable.js";
 import { dom } from "../../../kolibri/util/dom.js";
-
-export { NavigationProjector as DashboardRefinedProjector }
+export { NavigationProjector }
 
 /**
  * @typedef NavigationProjectorType

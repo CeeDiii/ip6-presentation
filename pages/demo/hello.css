@@ -1,0 +1,11 @@
+#content .hello div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content .hello svg {
+    width: 36em;
+}
+
+

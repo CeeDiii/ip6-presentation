@@ -284,17 +284,31 @@ slide25.setParent(struct8);
 
 
 /************************************** DEMO  ******************************************/
-// Adding content
+const WingController = (wingSwings, wingSpeed) => {
+    const newWingSpeed = 1 / wingSpeed;
+    return {
+        getWingSwings: () => wingSwings,
+        getWingSpeed:  () => newWingSpeed
+    }
+};
 
 // Creating the page
+// const helloPage = PageController('hello', null);
+const helloPage = PageController('hello', [WingController(20, 5)]);
 
 // Adding the page to the navigation
+navigationController.addPageController(helloPage);
 
 // Configuring the page
+helloPage.setValue('Hello Demo!');
+helloPage.setIconPath('./pages/icons/add.png');
+helloPage.setParent(struct5);
 
 // Projecting the static page
+// StaticPageProjector(helloPage, pinToContent, './pages/demo/hello.html');
 
 // Projecting the Flying Kolibri Page
+HelloPageProjector(helloPage, pinToContent, './pages/demo/hello.html');
 
 
 
